@@ -63,6 +63,7 @@ RUN		chown -R www-data:www-data /var/www/*
 RUN		chmod 777 /var/*
 
 # OTHER CONF
+COPY	./srcs/index.html /var/www/html/
 COPY	./srcs/autoindex.sh /var/www/html/
 COPY	./srcs/start.sh /var/www/html/
 EXPOSE	80 443
